@@ -1,0 +1,67 @@
+-Q theories iris_time
+-arg -w -arg -notation-overridden,-redundant-canonical-projection
+# change_no_check does not exist yet in 8.9.
+-arg -w -arg -convert_concl_no_check
+# Iris has some ambiguous coercion paths (TLC has one, too)
+# which produce a lot of warnings starting with Coq 8.10.
+-arg -w -arg -ambiguous-paths
+
+theories/heap_lang/lang.v
+theories/heap_lang/adequacy.v
+theories/heap_lang/lifting.v
+theories/heap_lang/notation.v
+theories/heap_lang/proofmode.v
+theories/heap_lang/tactics.v
+theories/heap_lang/lib/assert.v
+
+theories/Auth_max_nat.v
+theories/Auth_nat.v
+theories/Base.v
+theories/ClockIntegers.v
+theories/Examples.v
+theories/Reduction.v
+theories/Tactics.v
+theories/Simulation.v
+theories/ThunksSimple.v
+theories/Thunks.v
+theories/TimeCredits.v
+theories/TimeCreditsAltProofs.v
+theories/TimeReceipts.v
+theories/Combined.v
+theories/Translation.v
+
+theories/union_find/math/Ackermann.v
+theories/union_find/math/FilterTowardsInfinity.v
+theories/union_find/math/Filter.v
+theories/union_find/math/InverseAckermann.v
+theories/union_find/math/InverseNatNat.v
+theories/union_find/math/LibFunOrd.v
+theories/union_find/math/LibIter.v
+theories/union_find/math/LibNatExtra.v
+theories/union_find/math/LibRewrite.v
+theories/union_find/math/MiscArith.v
+theories/union_find/math/TLCBuffer.v
+theories/union_find/math/UnionFind01Data.v
+theories/union_find/math/UnionFind02EmptyCreate.v
+theories/union_find/math/UnionFind03Link.v
+theories/union_find/math/UnionFind04Compress.v
+theories/union_find/math/UnionFind05IteratedCompression.v
+theories/union_find/math/UnionFind06Join.v
+theories/union_find/math/UnionFind11Rank.v
+theories/union_find/math/UnionFind12RankEmptyCreate.v
+theories/union_find/math/UnionFind13RankLink.v
+theories/union_find/math/UnionFind14RankCompress.v
+theories/union_find/math/UnionFind15RankJoin.v
+theories/union_find/math/UnionFind21Parent.v
+theories/union_find/math/UnionFind22ParentEvolution.v
+theories/union_find/math/UnionFind23Evolution.v
+theories/union_find/math/UnionFind24Pleasant.v
+theories/union_find/math/UnionFind31Potential.v
+theories/union_find/math/UnionFind32PotentialCompress.v
+theories/union_find/math/UnionFind33PotentialAnalysis.v
+theories/union_find/math/UnionFind41Potential.v
+theories/union_find/math/UnionFind42PotentialCompress.v
+theories/union_find/math/UnionFind43PotentialAnalysis.v
+theories/union_find/math/UnionFind44PotentialJoin.v
+theories/union_find/Code.v
+theories/union_find/Proof.v
